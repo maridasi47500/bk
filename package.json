@@ -1,0 +1,16 @@
+{
+  "name": "bk",
+  "version": "0.0.1",
+  "description": "An Ionic project",
+  "devDependencies": {
+    "@ionic/v1-toolkit": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "@angular/core": "^14.2.7",
+    "@angular/router": "^14.2.7"
+  }
+}
