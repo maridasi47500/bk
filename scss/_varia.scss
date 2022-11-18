@@ -3,7 +3,16 @@ color:blue;
 }
 $macouleurbeige: #fed4b9;
 $macouleursignupbtn: #ff1d00;
+$mateintederouge: #ff1d00;
 $blanc: #fff;
+$monmarron: #935901;
+$btndaytime: 100px;
+$tailletitre:20px;
+$tabmenurouge: #F7230C;
+$hauteurnav: 120px;
+$mongris:#616161;
+$monombre:3px;
+
 .signupbtn.button {
     background-color: $macouleursignupbtn;
     border-color: $macouleursignupbtn;
@@ -12,6 +21,21 @@ $blanc: #fff;
     font-weight:900;
     border-radius:40px;
 }
+.map-list.button {
+    background-color: $macouleursignupbtn;
+    border-color: $macouleursignupbtn;
+    color: $blanc;
+    font-size:14px;
+    font-weight:900;
+    line-height:10px;
+    border-radius:40px;
+    float:right;
+}
+.map-list.button:hover {
+    border: 4px solid $blanc;
+
+}
+
 .signupbtn0001 {
     float:right;
     width:100px;
@@ -66,4 +90,148 @@ height:100px;
 
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
+}
+.menutitle {
+    width: 100%;
+    height: $btndaytime;
+    border-color: $monmarron; 
+    background-image: linear-gradient(0deg, $monmarron, $monmarron 50%, transparent 50%);
+    background-color: $monmarron;
+    color:$blanc;
+    font-size:$tailletitre;
+    font-weight:900px;
+    padding: 40px 0;
+    text-align:center;
+}
+.menutitle > div {
+    float:right;
+    width:$btndaytime;
+    height:$btndaytime;
+    text-align:center;
+    vertical-align: middle;
+    font-size:16px;
+    
+}
+.tabs-icon-top > .tabs .tab-item.tab-item-active{
+    color: $tabmenurouge;
+     border-color: $tabmenurouge; 
+    background-image: linear-gradient(0deg, $macouleurbeige, $macouleurbeige 50%, transparent 50%);
+    background-color: $macouleurbeige;
+}
+.tabs-icon-top > .tabs .tab-item{
+    color: $monmarron;
+     border-color: $macouleurbeige; 
+    background-image: linear-gradient(0deg, $macouleurbeige, $macouleurbeige 50%, transparent 50%);
+    background-color: $macouleurbeige;
+}
+.tabs-icon-top > .tabs {
+    
+}
+.tab-nav.tabs {
+    box-shadow: 0px 5px 5px $mongris;
+}
+.item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content {
+    padding-left:100px;
+}
+.item.item-avatar img {
+    border-radius:10px;
+    width:150px;
+    height:100px;
+    left:5px;
+    max-width:90px;
+    max-height:60px;
+}
+.item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content { 
+min-height:100px;
+}
+.mymenumenu {
+    display:none;
+}
+
+.pane.tab-content {
+    padding-top: $hauteurnav;
+}
+div.item.item-avatar {
+     border-color: $macouleurbeige; 
+    background-image: linear-gradient(0deg, $macouleurbeige, $macouleurbeige 50%, transparent 50%);
+    background-color: $macouleurbeige;
+    
+}
+div.item.item-avatar {
+	border-color: #fed4b9;
+	background-image: linear-gradient(0deg,#fed4b9,#fed4b9 50%,transparent 50%);
+	background-color: #fed4b9;
+	border: none;
+border-top-color: none;
+border-top-style: none;
+border-top-width: 0;
+border-bottom-color: $mongris;
+border-bottom-style: solid;
+border-bottom-width: medium;
+-moz-box-sizing:revert;
+box-sizing:revert
+}
+.tabs-striped.tabs-positive .tabs {
+    padding-left:310px;
+}
+$mahauteurtab: 20px;
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+    line-height: $mahauteurtab;
+}
+.tabs.parentdiv > div.tab-nav.tabs{
+  width:300px;
+  border:5px solid red;
+  overflow-x: hidden; 
+  float:left;
+}
+$mypaddingtab:20px;
+div.tab-nav.tabs > .tab-item{
+  width:1000px;
+  float:left;
+  font-size:15px;
+  font-family:arial;
+  padding:$mypaddingtab 10px $mypaddingtab 10px;
+  cursor: grab;
+  overflow:revert;
+  text-overflow:revert;
+  display:block;
+ 
+}
+.tabs-top > .tabs, .tabs.tabs-top {
+    overflow-x:scroll;
+    
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.tabs-striped.tabs-positive .tabs {
+    background-color:$macouleurbeige;
+}
+$hauteurdemestabs:80px; 
+.tabs {
+    height:$hauteurdemestabs;
+    overflow-y:hidden;
+}
+$hauteurdemabarlocation:70px;
+.locations {
+    width:100%;
+    height:$hauteurdemabarlocation;
+    color:$blanc;
+    border-color: $tabmenurouge; 
+    background-image: linear-gradient(0deg, $tabmenurouge, $tabmenurouge 50%, transparent 50%);
+    background-color: $tabmenurouge;
+    //text-align:center;
+    padding:40px 0;
+    /*display:flex;*/
+    justify-content:center;
+    font-size:24px;
+    font-weight:900;
+    
+}
+.mylocationbar.bar-positive.macouleur.macouleurdefond.bar.bar-header.has-tabs-top {
+    padding:0;
+}
+.tabs-stable.tabs-icon-top.tabs-bottom.tabs-standard > * >  a {    
+    cursor:pointer;
+    cursor:pointer;
 }

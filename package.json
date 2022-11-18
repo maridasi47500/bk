@@ -9,6 +9,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0"
   },
+  "type": "module",
   "dependencies": {
     "@angular/common": "^10.2.5",
     "@angular/core": "^14.2.7",
