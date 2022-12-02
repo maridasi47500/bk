@@ -1,0 +1,64 @@
+
+
+$macouleursignupbtn: #ff1d00;
+$blanc: #fff;
+.apply.button {
+    background-color: $macouleursignupbtn;
+    border-color: $macouleursignupbtn;
+    color: $blanc;
+    font-size:14px;
+    font-weight:900;
+    border-radius:40px;
+}
+.apply.button {
+    width: 30%;
+    float:left;
+}
+.inputpromocode {
+    width:70%;
+    float: left;
+}
+.promocodeinputtext {
+    height:100%;
+    width:100%;
+}
+$promocode:20px;
+.mypromocode {
+    width:100%;
+    height:$promocode;
+}
+#overlaypromo {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+.inputpromocode.item {
+    padding:0;
+}
+$blanc:#fff;
+#textpromo{
+ 
+  top: 0;
+  left: 0;
+
+  font-size: 20px;
+
+	
+	width: 100%;
+background-color: $blanc;
+z-index: 7779898;
+	position: absolute;
+	background-color: whitesmoke;
+	top: 70px;
+	text-align: center;
+	border-radius: 10px;
+        padding:10px;
+}

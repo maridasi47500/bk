@@ -12,9 +12,15 @@ $dark:                            #444;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts";
 
+
+@import "./_variables.app.scss";
 @import "./_myviewlocation.scss";
 @import "./_varia.scss";
-@import "./_variables.app.scss";
+@import "./mymenu.app.scss";
+@import "./signin.scss";
+@import "./signinfavorite.scss";
+@import "./tabsbottom.scss";
+@import "./promocode.scss";
 // Include all of Ionic
 
 .myclassname1 {

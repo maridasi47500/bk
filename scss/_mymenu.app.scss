@@ -1,0 +1,105 @@
+$momentdelajournee:#c36d06;
+.daytime.momentjournee, .breakfast.momentjournee {
+    background-color:$momentdelajournee;
+    border-color:$momentdelajournee;
+}
+.daytime,.breakfast {
+    cursor:pointer;
+}
+.signupbtn.button {
+    width: 100px;
+}
+
+.list.card.mainmenu div {
+    cursor: pointer;
+}
+.menutitle {
+    display:none;
+    z-index: 2;
+    position:absolute;
+    top:44px;
+}
+
+.myfullmenu > .tabsmenu > .tabs {
+    top:100px;
+}
+.myfullmenu > .menutitle {
+    display:block;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+$blanc:#fff;
+#text{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 20px;
+
+	z-index: 5;
+	
+	width: 100%;
+	height: calc(100vh - 79px);
+	background-color: $blanc;
+
+}
+.modal-backdrop.active {
+    //z-index:1;
+}
+.modal-backdrop.active > .modal-backdrop-bg {
+    transition:none;
+    background-color:none;
+}
+.modal.ng-enter.active.ng-enter-active {
+    
+}
+.mymodalviewmenu.modal{
+     //z-index:99;
+    height:revert;
+    position:relative
+} 
+
+button.boutonsbk {
+    background-color: $macouleursignupbtn;
+    border-color: $macouleursignupbtn;
+    color: $blanc;
+    font-size:14px;
+    font-weight:900;
+    line-height:10px;
+    border-radius:40px;
+    float:revert;
+}
+p.myaccount {
+    margin-top:50px;
+}
+$heighttabs: 79px;
+$hauteurvue: 100vh;
+$hauteurtopmenu: 50px;
+$hauteursansonglet:calc(100vh - 79px - 50px);
+.modal-backdrop.active, .modal-wrapper,.mamodaledemenu.modal.no-animation {
+    height:$hauteursansonglet;
+   
+  
+}
+$hauteurmainmenu: calc(100vh - 79px - 50px);
+.has-header.scroll-content.ionic-scroll, .mainmenu.ionic-scroll.has-header.scroll-content, .mainmenu.ionic-scroll.has-header.scroll-content > .scroll {
+    max-height:$hauteurmainmenu;
+    top:0;
+    position:absolute;
+}
+.mymodalviewmenu.modal {
+	
+	pointer-events:revert;
+        
+}

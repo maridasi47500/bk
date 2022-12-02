@@ -6,12 +6,14 @@ $macouleursignupbtn: #ff1d00;
 $mateintederouge: #ff1d00;
 $blanc: #fff;
 $monmarron: #935901;
-$btndaytime: 100px;
+$btndaytime: 54px;
 $tailletitre:20px;
 $tabmenurouge: #F7230C;
 $hauteurnav: 120px;
 $mongris:#616161;
 $monombre:3px;
+$macouleursignupbtn: #ff1d00;
+$blanc: #fff;
 
 .signupbtn.button {
     background-color: $macouleursignupbtn;
@@ -100,7 +102,6 @@ height:100px;
     color:$blanc;
     font-size:$tailletitre;
     font-weight:900px;
-    padding: 40px 0;
     text-align:center;
 }
 .menutitle > div {
@@ -174,6 +175,16 @@ box-sizing:revert
 .tabs-striped.tabs-positive .tabs {
     padding-left:310px;
 }
+@media screen and (max-device-width: 500px) {
+.tabs-striped.tabs-positive.tabsmenu .tabs {
+    padding-left:10px;
+    max-width:1000px;
+}
+
+.tabsmenu > .tab-nav.tabs > a {
+	transform: translateX(330px);
+}
+}
 $mahauteurtab: 20px;
 .tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
     line-height: $mahauteurtab;
@@ -190,12 +201,19 @@ div.tab-nav.tabs > .tab-item{
   float:left;
   font-size:15px;
   font-family:arial;
-  padding:$mypaddingtab 10px $mypaddingtab 10px;
+  /*padding:$mypaddingtab 10px $mypaddingtab 10px;*/
   cursor: grab;
   overflow:revert;
   text-overflow:revert;
   display:block;
  
+}
+.tabsmenu > .tabs > .tab-item > .tab-title.ng-binding {
+	margin: 20px 10px 20px 10px;
+	height: 100%;
+	display: inline-block;
+        text-align:center;
+        vertical-align:middle;
 }
 .tabs-top > .tabs, .tabs.tabs-top {
     overflow-x:scroll;

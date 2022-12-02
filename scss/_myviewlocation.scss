@@ -1,3 +1,7 @@
+.autocomplete ion-list {
+    cursor:pointer;
+    z-index:199889;
+}
 $hauteurdemabar: 70px;
 $hauteurbarlocation: 80px;
 $hauteurvue: 200px;
@@ -7,6 +11,7 @@ $hauteurtabitem:79px;
 
 height: $hauteurvue;
 }
+
 .has-header.scroll-content.ionic-scroll {
     overflow:scroll;
    top:$hauteurbarlocation;
@@ -111,7 +116,7 @@ $hauteur_liste_bkemplacement: 350px;
 .contenu_vue_emplacement  > .tabs-stable.mytabslocation > .tab-content[nav-view="active"] {
 
 	
-	z-index: 10;
+	//z-index: 10;
 	display: block;
 	height: 400px;
 	overflow-y: scroll;
@@ -148,7 +153,7 @@ $hauteur_liste_bkemplacement: 350px;
 	height: 100%;
 	
 	width: 100%;
-        z-index:5;
+        //z-index:5;
 }
 .tabs-stable.tabs-icon-top.mytabslocation_list.mytabslocation.tabs-bottom.tabs-standard {
    	/* overflow: scroll; */
@@ -232,7 +237,7 @@ $blanc:#fff;
 		width: inherit;
 		overflow-y: scroll;
 		max-height: 150%;
-		z-index: 999;
+		//z-index: 999;
 
 		ion-item {
 
@@ -302,4 +307,35 @@ $fontdeliverytitleweight:900;
 }
 button.share-loc.deliver-here {
     width:100%;
+}
+$disabledbtncolor: #fe6767;
+button.share-loc.deliver-here.disabledbtn {
+    background-color:$disabledbtncolor;
+    border-color:$disabledbtncolor;
+}
+$sizespinner:70px;
+$sizespinnerheight:30px;
+.spinner.spinner-energized svg { 
+     width: $sizespinner;
+  height: $sizespinnerheight;
+  
+}
+.spinner.spinner-energized {
+    stroke:$blanc;
+    fill:$blanc;
+
+   
+   
+}
+
+.spinner.spinner-energized g {
+    transform: translate(-50%,-70%) scale(2.5);
+}
+.homepage {
+    overflow:scroll;
+    height:200px;
+}
+
+.mymodalviewmenu {
+    
 }

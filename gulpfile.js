@@ -8,13 +8,17 @@ var paths = {
   sass: ['./scss/**/*.scss']
 };
 
+gulp.task('default', ['sass']);
+
+gulp.task('watch', function() {
+  gulp.watch(paths.sass);
+});
 
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/*.scss')
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(gulp.dest('./www/css/'))
     .pipe(cleanCss({
       keepSpecialComments: 0
     }))
@@ -24,9 +28,6 @@ gulp.task('sass', function(done) {
 });
 
 
-gulp.task('default', ['sass'])
 
-gulp.task('watch', function() {
-  gulp.watch(paths.sass);
-});
+
 

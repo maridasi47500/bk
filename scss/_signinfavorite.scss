@@ -1,0 +1,69 @@
+.signupbtn0002 {
+    float:right;
+    width:100%;
+    padding-bottom: 10px;
+}
+
+$macouleursignupbtn: #ff1d00;
+$blanc: #fff;
+
+.signupbtn2.button {
+    background-color: $macouleursignupbtn;
+    border-color: $macouleursignupbtn;
+    color: $blanc;
+    font-size:14px;
+    font-weight:900;
+    border-radius:40px;
+}
+.signupbtn2.button {
+    width: 100%;
+}
+.cancelbtn.button {
+    background-color: $blanc;
+    border-color: $macouleursignupbtn;
+    color: $macouleursignupbtn;
+    font-size:14px;
+    font-weight:900;
+    border-radius:40px;
+}
+
+.cancelbtn.button {
+    width: 100%;
+}
+.cancelbtn0001 {
+    float:revert;
+    width:100%;
+}
+#overlaymodal {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+
+}
+$blanc:#fff;
+#textmodal{
+ 
+  top: 0;
+  left: 0;
+
+  font-size: 20px;
+
+	
+	width: 100%;
+background-color: $blanc;
+z-index: 7779898;
+	position: absolute;
+	background-color: whitesmoke;
+	top: 70px;
+	text-align: center;
+	border-radius: 10px;
+        padding:10px;
+}
