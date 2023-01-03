@@ -1,11 +1,14 @@
 {
   "name": "bk",
   "integrations": {},
-  "type": "ionic1",
- "watchPatterns": [
+  "typescript": "true",
+  "type": "ionic2",
+  "v2": "true",
+  "watchPatterns": [
     "scss/**/*",
     "www/**/*",
     "!www/lib/**/*",
     "!www/**/*.map"
-  ]
+  ],
+  "app_id": ""
 }

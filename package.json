@@ -9,14 +9,25 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0"
   },
+  "scripts": {
+    "build": "gulp build",
+    "emulate:before": "build",
+    "deploy:before": "build",
+    "build:before": "build",
+    "run:before": "build"
+  },
   "type": "module",
   "dependencies": {
     "@angular/common": "^10.2.5",
     "@angular/core": "^14.2.7",
     "@angular/platform-browser": "^14.2.9",
     "@angular/router": "^14.2.7",
+    "@ionic/cli-plugin-ionic-angular": "^1.4.1",
+    "browser-sync": "^2.27.10",
     "gulp-concat": "^2.6.1",
+    "gulp-newer": "^1.4.0",
     "ionic": "^2.2.3",
+    "ionic-angular": "^3.0.1",
     "sass": "^1.1.0",
     "zone.js": "^0.11.8"
   }
